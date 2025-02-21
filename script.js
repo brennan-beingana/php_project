@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="doc.css">
-</head>
-<body>
-    <div class="inputs">
-    <input type="text" name="contact" placeholder="Enter your phone number">  
+function loadForm(userType) {
+    let formContent = "";
+    
+    if (userType === "student") {
+        formContent = `
+        <div class="inputs">
     <label for="reg_no">Registration Number</label>
     <input type="text"name="reg_no" id="reg_no" placeholder="Enter Reg No.">
     <label for="stud_no">Student Number</label>
@@ -27,14 +22,37 @@
         <option value="hall9">Africa Hall</option>
             
     </select>
+    
     <label for="male">Male</label> 
     <input type="radio" name="gender" id="male">
     <label for="female">Female</label>
-    <input type="radio" name="gender" id="male">
+    <input type="radio" name="gender" id="female">
     <label for="nationality"></label>
     <input type="text" name="nationality" placeholder="Enter your nationality">
     <label for="course">Course Name</label>
     <input type="text" placeholder="Enter your Course" name="course">
-</div>
-</body>
-</html>
+    </div>
+             `;
+    } 
+    else if (userType === "admin") {
+        formContent = `
+            <label for="adminID">Admin ID:</label>
+            <input type="text" id="adminID" name="adminID" required>
+
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+        `;
+    } 
+    else if (userType === "hallleader") {
+        formContent = `
+            <label for="hallID">Hall Leader ID:</label>
+            <input type="text" id="hallID" name="hallID" required>
+
+            <label for="hallName">Hall Name:</label>
+            <input type="text" id="hallName" name="hallName" required>
+        `;
+    }
+
+    document.getElementById("dynamicForm").innerHTML = formContent;
+    document.getElementById("registrationForm").style.display = "block";
+}
