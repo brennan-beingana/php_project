@@ -1,0 +1,130 @@
+body{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(Mak-University-Main-Building.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    
+}
+.heading{
+    background-color: #091057;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DBD3D3;
+    position: static;
+    margin:0px 0px 0px 0px;
+}
+.heading svg{
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+
+}
+.heading p{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.content_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    margin-top: 20px;
+    
+    
+
+}
+.content{
+    /*background-image: "C:\Users\Others\Desktop\BRENNAN 02 02\WEB 2\php_project\Mak-University-Main-Building.jpg";*/
+    height: 470px;
+    width: 500px;
+    background-color: #dbd3d3dc;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #091057;
+    border-width: 1px;
+    padding: 10px;
+    color: #091057;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+}
+.inputs input{
+    width: 200px;
+    padding: 10px;
+    border-style: solid;
+    border-color:#EC8305;
+    border-radius: 10px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.buttons button{
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    transition: 0.5s;
+    border-width: 1px;
+}
+.buttons button:hover{
+    padding: 15px;
+    transition: 0.5s;
+}
+.back{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    border-style: solid;
+    border-color: #EC8305;
+    border-width: 1px;
+    padding: 2px;
+}
+.reg_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+
+}
+.reg_buttons button{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border-style: solid;
+    transition: 0.4s;
+    
+}
+.reg_buttons :hover{
+    border-radius: 40px;
+}
+
+/*#024CAA
+#DBD3D3
+#EC8305*/
